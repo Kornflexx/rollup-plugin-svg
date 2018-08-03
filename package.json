@@ -21,7 +21,7 @@
     "build": "npm run build:cjs && npm run build:es",
     "build:cjs": "rollup -c -o dist/rollup-plugin-svg.cjs.js -f cjs",
     "build:es": "rollup -c -o dist/rollup-plugin-svg.es.js -f es6",
-    "install": "npm run build"
+    "postinstall": "npm run build"
   },
   "repository": {
     "type": "git",
