@@ -16,7 +16,7 @@ export default function svg ( options = {} ) {
 			const mime = 'image/svg+xml'
 			const buffer = Buffer.from(code.trim(), 'utf-8')
 			const encoded = buffer.toString('base64')
-			const exported = `export default 'data:${mime};base64,${encoded}'`
+			const exported = `data:${mime};base64,${encoded}`
 
 			return { code: exported, map: { mappings: '' } }
 		}
